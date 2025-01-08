@@ -42,20 +42,21 @@ body {
 .header-background {
   background-image: url("./img/technology-6873012_1280.jpg");
   background-size: cover;
-  height: 100vh;
+  height: fit-content;
   min-height: 580px;
   width: 100vw;
   color: white;
 }
 .header-background .header-background-filter {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), black);
-  height: 100%;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 5rem 0 0 0;
+  gap: 2rem;
 }
 .header-background .header-background-filter .nav-bar {
   width: 100%;
@@ -137,6 +138,32 @@ body {
   text-align: center;
   padding: 0.5rem;
 }
+.header-background .header-background-filter .skill-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.header-background .header-background-filter .skill-container .skill-box {
+  display: flex;
+  flex-direction: column;
+}
+.header-background .header-background-filter .skill-container .skill-box .skill-title {
+  font-size: 1.5rem;
+  font-family: "Thin", sans-serif;
+  text-shadow: 0 0 10px white;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.header-background .header-background-filter .skill-container .skill-box .skill-text {
+  font-size: 1rem;
+  font-family: "Medium", sans-serif;
+  text-shadow: 0 0 10px white;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
 
 .section-1 .section-1-background {
   background-image: url("./img/network-4851119_1280.jpg");
@@ -149,33 +176,6 @@ body {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), black);
   height: fit-content;
   width: 100%;
-}
-.section-1 .section-1-background .section-1-background-filter .skill-container {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 2rem 0;
-}
-.section-1 .section-1-background .section-1-background-filter .skill-container .skill-box {
-  display: flex;
-  flex-direction: column;
-}
-.section-1 .section-1-background .section-1-background-filter .skill-container .skill-box .skill-title {
-  font-size: 1.5rem;
-  font-family: "Thin", sans-serif;
-  text-shadow: 0 0 10px white;
-  color: white;
-  padding: 0.5rem 0;
-  text-align: center;
-}
-.section-1 .section-1-background .section-1-background-filter .skill-container .skill-box .skill-text {
-  font-size: 1rem;
-  font-family: "Medium", sans-serif;
-  text-shadow: 0 0 10px white;
-  color: white;
-  letter-spacing: 2px;
-  text-align: center;
 }
 
 .section-2 .section-2-background {
