@@ -36,12 +36,14 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-width: 350px;
 }
 
 .header-background {
   background-image: url("./img/technology-6873012_1280.jpg");
   background-size: cover;
   height: 100vh;
+  min-height: 580px;
   width: 100vw;
   color: white;
 }
@@ -52,8 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 10rem 0;
+  justify-content: space-around;
+  padding: 5rem 0 0 0;
 }
 .header-background .header-background-filter .nav-bar {
   width: 100%;
@@ -108,8 +110,7 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 7rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 0.3rem;
   box-shadow: rgba(255, 255, 255, 0.57) 0 0 5px, black 0 0 15px inset;
@@ -118,24 +119,21 @@ body {
   text-shadow: 0 0 10px white;
 }
 .header-background .header-background-filter .skills-icons {
-  width: 70%;
-  max-width: 500px;
+  width: 50%;
+  max-width: 275px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 2rem;
   text-shadow: 0 0 10px white;
   flex-wrap: wrap;
   border-radius: 1rem;
   padding: 5%;
-  background-color: rgba(255, 255, 255, 0.02);
-  box-shadow: rgba(255, 255, 255, 0.57) 0 0 5px, black 0 0 15px inset;
 }
 .header-background .header-background-filter .skills-icons i {
-  flex: 1 0 30%;
-  width: 3rem;
+  width: 2.5rem;
   text-align: center;
   padding: 0.5rem;
 }
@@ -143,21 +141,21 @@ body {
 .section-1 .section-1-background {
   background-image: url("./img/network-4851119_1280.jpg");
   background-size: cover;
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   color: white;
 }
 .section-1 .section-1-background .section-1-background-filter {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), black);
-  height: 100%;
+  height: fit-content;
   width: 100%;
 }
 .section-1 .section-1-background .section-1-background-filter .skill-container {
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 10rem 0;
+  justify-content: flex-start;
+  padding: 2rem 0;
 }
 .section-1 .section-1-background .section-1-background-filter .skill-container .skill-box {
   display: flex;
@@ -288,13 +286,17 @@ body {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .titles h1 {
-    font-size: 4rem;
-  }
-  .titles h2 {
     font-size: 3rem;
   }
+  .titles h2 {
+    font-size: 2rem;
+  }
   .section-1 .section-1-background {
-    height: 30rem;
+    height: fit-content;
+  }
+  .section-1 .section-1-background .section-1-background-filter {
+    padding: 5rem 0;
+    height: fit-content;
   }
   .section-1 .section-1-background .section-1-background-filter .skill-container {
     flex-direction: row;
