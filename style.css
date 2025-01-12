@@ -111,6 +111,7 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
+  width: 5rem;
   padding: 0.5rem;
   border: none;
   border-radius: 0.3rem;
@@ -165,21 +166,8 @@ body {
   text-align: center;
 }
 
-.section-1 .section-1-background {
-  background-image: url("./img/network-4851119_1280.jpg");
-  background-size: cover;
-  height: fit-content;
-  width: 100vw;
-  color: white;
-}
-.section-1 .section-1-background .section-1-background-filter {
-  background-image: linear-gradient(black, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65), black);
-  height: fit-content;
-  width: 100%;
-}
-
 .section-2 .section-2-background {
-  background-image: url("./img/ai-generated-8548263_1280.jpg");
+  background-image: url("./img/network-4851119_1280.jpg");
   background-size: cover;
   height: fit-content;
   width: 100vw;
@@ -196,15 +184,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem 0;
+  padding: 4rem 0;
   gap: 2rem;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;
-  width: fit-content;
+  align-items: flex-start;
+  width: 25rem;
+  height: 20rem;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project-title {
   font-size: 1.5rem;
@@ -216,9 +205,8 @@ body {
   text-align: left;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project {
-  width: 80%;
-  max-width: 24rem;
-  height: 15rem;
+  height: 100%;
+  width: 100%;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project .project-background-filter {
   background-color: rgba(0, 0, 0, 0);
@@ -239,6 +227,7 @@ body {
   text-align: left;
   transition: text-shadow 1s ease-in-out, color 1s ease-in-out;
   line-height: 1rem;
+  height: 100%;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project .project-background-filter .project-description a {
   text-decoration: none;
@@ -282,33 +271,37 @@ body {
   background-size: cover;
   background-position: center;
 }
+.section-2 .section-2-background .section-2-background-filter .projects-container .authentication-api {
+  background-image: url("./img/security-2168234_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .titles h1 {
+  .header-background {
+    height: 100vh;
+  }
+  .header-background .header-background-filter .titles h1 {
     font-size: 3rem;
   }
-  .titles h2 {
+  .header-background .header-background-filter .titles h2 {
     font-size: 2rem;
   }
-  .section-1 .section-1-background {
-    height: fit-content;
-  }
-  .section-1 .section-1-background .section-1-background-filter {
-    padding: 5rem 0;
-    height: fit-content;
-  }
-  .section-1 .section-1-background .section-1-background-filter .skill-container {
+  .header-background .header-background-filter .skill-container {
     flex-direction: row;
-    height: fit-content;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
   }
-  .section-2 .section-2-background .section-2-background-filter .projects-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .header-background .header-background-filter .skill-container .skill-box {
+    width: 20%;
   }
+}
+.section-2 .section-2-background .section-2-background-filter .projects-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
