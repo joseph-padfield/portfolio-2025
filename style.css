@@ -256,6 +256,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+.section-2 .section-2-background .section-2-background-filter .projects-container .planet-age-calculator {
+  background-image: url("./img/planet-age-calculator.png");
+  background-size: cover;
+  background-position: center;
+}
 .section-2 .section-2-background .section-2-background-filter .projects-container .academy-portal {
   background-image: url("./img/academy-portal.png");
   background-size: cover;
