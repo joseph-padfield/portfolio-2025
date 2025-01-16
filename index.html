@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <script src="https://kit.fontawesome.com/85943c4132.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="script.js"></script>
     <title>Joseph Padfield | Portfolio</title>
 </head>
 
@@ -36,7 +37,8 @@
                 <h2>Full-Stack Developer</h2>
             </div>
             <div class="header-buttons">
-                <a href="#projects">Projects</a>
+                <a id="open-about-modal">About</a>
+                <a id="projects-button">Projects</a>
                 <a>Resumé</a>
             </div>
             <div class="skills-icons">
@@ -80,9 +82,24 @@
                     <p class="skill-text">
                         node<br>
                         express<br>
+                        laravel<br>
                         slim<br><br>
                     </p>
                 </div>
+
+                <dialog id="about-modal">
+                    <p>
+                        A full-stack developer with a lifelong passion for technology, equally at home crafting elegant user interfaces as I am exploring the complexities of back-end development.<br><br>
+
+                        After a successful 12-year international career as an Opera Singer, I decided it was time for a new challenge. Having explored a few different avenues - completing a year of law school before trying my hand at recruitment for a year - I realised that I could turn my hobby into a career. So I enrolled on the Full-Stack Track at iO Academy in Bath.<br><br>
+
+                        Over four months I learnt a range of languages and frameworks, each of which was capped off with a team project where we were given the opportunity to apply our Agile and Scrum training in a real-world project setting.<br><br>
+
+                        I am seeking opportunities to apply my skills in a fast-paced environment where I can work with new and innovative technology as I continue to learn and grow.
+                    </p>
+                    <br><br>
+                    <button id="close-about-modal">Close</button>
+                </dialog>
 
                 <div class="skill-box">
                     <p class="skill-title">

@@ -57,6 +57,7 @@ body {
   justify-content: space-around;
   padding: 5rem 0 0 0;
   gap: 2rem;
+  position: relative;
 }
 .header-background .header-background-filter .nav-bar {
   width: 100%;
@@ -89,6 +90,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 .header-background .header-background-filter .titles h1 {
   font-family: "Thin", sans-serif;
@@ -107,6 +109,45 @@ body {
   gap: 1rem;
 }
 .header-background .header-background-filter .header-buttons a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: rgba(255, 255, 255, 0.57) 0 0 5px, black 0 0 15px inset;
+  font-family: "Medium", sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px white;
+}
+.header-background .header-background-filter #about-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2rem;
+  box-shadow: 5px 10px 20px black;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-background .header-background-filter #about-modal p {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-family: "Medium", sans-serif;
+  text-shadow: 0 0 10px white;
+  color: white;
+  letter-spacing: 2px;
+  max-width: 400px;
+  height: fit-content;
+}
+.header-background .header-background-filter #about-modal button {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -287,6 +328,9 @@ body {
   .header-background {
     height: 100vh;
   }
+  .header-background .header-background-filter {
+    height: 100vh;
+  }
   .header-background .header-background-filter .titles h1 {
     font-size: 3rem;
   }
@@ -309,6 +353,45 @@ body {
   justify-content: center;
 }
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header-background {
+    height: fit-content;
+  }
+  .header-background .header-background-filter {
+    height: fit-content;
+  }
+  .header-background .header-background-filter .nav-bar {
+    padding: 0.5rem 4rem;
+  }
+  .header-background .header-background-filter .titles h1 {
+    font-size: 4rem;
+    margin: 1rem;
+  }
+  .header-background .header-background-filter .titles h2 {
+    font-size: 3rem;
+  }
+  .header-background .header-background-filter .header-buttons {
+    width: fit-content;
+  }
+  .header-background .header-background-filter .header-buttons a {
+    font-size: 1.5rem;
+    width: fit-content;
+  }
+  .header-background .header-background-filter .skills-icons {
+    max-width: unset;
+    width: 100%;
+    gap: 4rem;
+  }
+  .header-background .header-background-filter .skills-icons i {
+    font-size: 3rem;
+  }
+  .header-background .header-background-filter .skill-container .skill-box .skill-title {
+    font-size: 2rem;
+  }
+  .header-background .header-background-filter .skill-container .skill-box .skill-text {
+    font-size: 1.5rem;
+  }
+}
 /* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=style.css.map */
