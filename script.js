@@ -5,11 +5,14 @@ const closeAboutModal = document.getElementById('close-about-modal')
 openAboutModal.addEventListener('click', e => {
     e.preventDefault()
     aboutModal.style.display = 'flex'
+    setTimeout(() => aboutModal.style.opacity = 1, 50)
 })
 
 closeAboutModal.addEventListener('click', e => {
     e.preventDefault()
-    aboutModal.style.display = 'none'
+    aboutModal.style.opacity = 0
+    setTimeout(() => aboutModal.style.display = 'none', 1000)
+
 })
 
 const projects = document.getElementById('projects')
