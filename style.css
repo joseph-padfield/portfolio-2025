@@ -78,6 +78,7 @@ body {
   font-family: "Book", sans-serif;
   color: white;
   text-shadow: 0 0 10px white;
+  cursor: pointer;
 }
 .header-background .header-background-filter .nav-bar .email-box p {
   font-size: 1rem;
@@ -121,6 +122,7 @@ body {
   font-family: "Medium", sans-serif;
   letter-spacing: 1px;
   text-shadow: 0 0 10px white;
+  cursor: pointer;
 }
 .header-background .header-background-filter #about-modal {
   position: fixed;
@@ -160,6 +162,7 @@ body {
   font-family: "Medium", sans-serif;
   letter-spacing: 1px;
   text-shadow: 0 0 10px white;
+  cursor: pointer;
 }
 .header-background .header-background-filter .skills-icons {
   width: 50%;
@@ -272,12 +275,14 @@ body {
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project .project-background-filter .project-description a {
   text-decoration: none;
+  cursor: pointer;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project .project-background-filter .project-description .project-link {
   color: rgba(255, 255, 255, 0);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0);
   transition: text-shadow 1s ease-in-out, color 1s ease-in-out;
   font-family: "SemiBoldItalic", sans-serif;
+  cursor: pointer;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .project-box .project-background-filter:hover {
   background-color: rgba(0, 0, 0, 0.76);
@@ -291,6 +296,7 @@ body {
   text-shadow: 0 0 10px rgb(255, 213, 0);
   transition: text-shadow 1s ease-in-out, color 1s ease-in-out;
   font-family: "SemiBoldItalic", sans-serif;
+  cursor: pointer;
 }
 .section-2 .section-2-background .section-2-background-filter .projects-container .decrypt-encrypt {
   background-image: url("./img/encryption-app.png");
