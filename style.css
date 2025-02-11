@@ -300,6 +300,11 @@ body {
   font-family: "SemiBoldItalic", sans-serif;
   cursor: pointer;
 }
+.section-2 .section-2-background .section-2-background-filter .projects-container .reels-from-the-crypt {
+  background-image: url("./img/reels-from-the-crypt.png");
+  background-size: cover;
+  background-position: center;
+}
 .section-2 .section-2-background .section-2-background-filter .projects-container .decrypt-encrypt {
   background-image: url("./img/encryption-app.png");
   background-size: cover;
