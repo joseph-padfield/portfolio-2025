@@ -155,7 +155,9 @@ p {
 #about-text {
   width: 80vw;
   max-width: 700px;
-  font-family: "Medium", sans-serif;
+  font-family: "Book", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #skills-parent-container {
@@ -170,8 +172,8 @@ p {
 
 #skills-text {
   font-size: 1.5rem;
-  line-height: unset;
   width: 80%;
+  line-height: unset;
 }
 #skills-text span {
   font-family: Thin, sans-serif;
