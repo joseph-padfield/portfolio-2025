@@ -7,270 +7,120 @@
           integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <script src="https://kit.fontawesome.com/85943c4132.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script defer src="script.js"></script>
-    <title>Joseph Padfield | Portfolio</title>
+    <script src="https://kit.fontawesome.com/85943c4132.js" crossorigin="anonymous"></script>
+    <title>Joseph Padfield | Full Stack Developer</title>
 </head>
 
 <body>
-
-<header>
-    <div class="header-background">
-        <div class="header-background-filter">
-            <nav class="nav-bar">
-                <div class="icon-box">
-                    <a href="https://github.com/joseph-padfield" target="_blank"><i class="fa fa-github-square"
-                                                                                    aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/joseph-padfield/" target="_blank"><i
-                            class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                </div>
-
-                <div class="email-box">
-                    <p>joseph.padfield@gmail.com</p>
-                </div>
-            </nav>
-            <div class="titles">
-                <h1>Joseph Padfield</h1>
-                <h2>Full-Stack Developer</h2>
-            </div>
-            <div class="header-buttons">
-                <a id="open-about-modal">About</a>
-                <a id="projects-button">Projects</a>
-                <a href="Joseph-Padfield-CV-Feb-2025.pdf" target="_blank">CV</a>
-            </div>
-            <div class="skills-icons">
-                <i class="fab fa-js"></i>
-                <i class="fab fa-php"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="devicon-mysql-original"></i>
-                <i class="devicon-mongodb-plain"></i>
-            </div>
-            <div class="skill-container">
-                <div class="skill-box">
-                    <p class="skill-title">
-                        core technologies:
-                    </p>
-                    <p class="skill-text">
-                        javascript<br>
-                        typescript<br>
-                        php<br>
-                        html<br>
-                        css<br><br>
-                    </p>
-                </div>
-
-                <div class="skill-box">
-                    <p class="skill-title">
-                        front-end:
-                    </p>
-                    <p class="skill-text">
-                        react<br>
-                        sass<br>
-                        bootstrap<br>
-                        tailwind<br><br>
-                    </p>
-                </div>
-
-                <div class="skill-box">
-                    <p class="skill-title">
-                        back-end:
-                    </p>
-                    <p class="skill-text">
-                        node<br>
-                        express<br>
-                        laravel<br>
-                        slim<br><br>
-                    </p>
-                </div>
-
-                <dialog id="about-modal">
-                    <p>
-                        A professional opera singer turned full-stack developer with a lifelong love of technology and a passion for crafting elegant and
-                        efficient solutions. I bring a unique blend of creativity and analytical thinking to every project.<br>
-                        While I'm passionate about all aspects of full-stack development, I find particular satisfaction
-                        in the intricacies of backend architecture and creating robust, scalable systems.<br>
-                        My background isn't traditional – after a successful 12-year international opera career, I sought
-                        a new challenge, and discovered my true calling in technology.  <br>
-                        Following a period of exploration, including a year of law school and a year in recruitment,
-                        I dedicated myself to learning full-stack development at iO Academy in Bath.  <br>
-                        Over four intensive months, I immersed myself in a range of languages and frameworks,
-                        culminating in team projects that honed my Agile and Scrum skills. <br>
-                        I am now eager to contribute my skills and drive to a fast-paced environment
-                        where I can continue to learn and grow, working with innovative technologies.<br>
-                        I am currently developing my knowledge of cybersecurity as a hobby, which will supplement my
-                        skill set as a developer
-                    </p>
-                    <br><br>
-                    <button id="close-about-modal">Close</button>
-                </dialog>
-
-                <div class="skill-box">
-                    <p class="skill-title">
-                        databases:
-                    </p>
-                    <p class="skill-text">
-                        mysql<br>
-                        mongodb<br><br>
-                    </p>
-                </div>
-            </div>
+<nav>
+    <a href="https://github.com/joseph-padfield" target="_blank"><i class="fa fa-github-square social-link"
+                                                                    aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/joseph-padfield/" target="_blank"><i class="fa fa-linkedin-square social-link"
+                                                                              aria-hidden="true"></i></a>
+    <a onclick="window.location.href='mailto:joseph.padfield@gmail.com?subject=Enquiry'"><i class="fa fa-envelope social-link"
+                                                                              aria-hidden="true"></i></a>
+</nav>
+<div class="nav-buttons">
+    <a href="#title">Home</a>
+    <a href="#projects-section">Projects</a>
+    <a href="#about-section">About</a>
+    <a href="#skills-section">Skills</a>
+    <a href="Joseph-Padfield-CV-Feb-2025.pdf" target="_blank">CV</a>
+</div>
+<section id="title">
+<h1 class="name-header">Joseph Padfield</h1>
+<h1>Full-Stack Developer</h1>
+<p>PHP | Javascript | Typescript | HTML | CSS</p>
+</section>
+<section id="projects-section">
+<h1>Projects</h1>
+<div class="projects-container">
+    <div class="project">
+        <h3>Expenses App (WIP)</h3>
+        <img src="img/expenses.jpg" class="project-images">
+        <div class="project-info">
+            <h3> PHP (Slim) | Typescript (React) | SQL | HTML | CSS | JWT | Chart.js<br></h3>
+            <p>
+                A web-based application built using Slim that allows users to track their expenses efficiently.
+                The system enables users to add, edit, delete, and categorize expenses, providing insights into their
+                spending habits.<br>
+                <a href="https://github.com/joseph-padfield/expenses_tracker"
+                   target="_blank" class="project-link">GitHub Repository (API)</a>
+<!--                <a href="https://joseph-padfield.github.io/decryptionTechTestExercise/"-->
+<!--                   target="_blank" class="project-link">Live app</a>-->
+            </p>
         </div>
     </div>
-</header>
-<section class="section-2" id="projects">
-    <div class="section-2-background">
-        <div class="section-2-background-filter">
-            <div class="projects-container">
-                <div class="project-box">
-                    <p class="project-title">Film Collection App</p>
-                    <div class="project reels-from-the-crypt">
-                        <div class="project-background-filter">
-                            <p class="project-description">A work-in-progress film collector app that allows users to search for and display
-                                film information, using the Slim PHP framework and a SQL database. The app makes use of
-                                The Movie Database (TMDB) API to perform the search, then transforms the data before
-                                storing it for display.<br>
-                                Currently, the user can search, add and delete entries as well as view details such as
-                                poster, title, release date, director and cast. Other features which could be added include
-                                the ability to sort results, predictive search, fuzzy search, adding a 'favourite' list
-                                and adding details such as view date and score.
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/joseph-padfield/film-collector-app"
-                                   target="_blank"><span
-                                        class="project-link">GitHub repository</span></a><br>
-                                <a href="https://film-collection.2024-josephp.dev.io-academy.uk/films"
-                                   target="_blank"><span
-                                        class="project-link">Live link</span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <p class="project-title">Authentication API</p>
-                    <div class="project authentication-api">
-                        <div class="project-background-filter">
-                            <p class="project-description">A RESTful API for user authentication built with Node.js,
-                                Express.js and MongoDB. It offers secure registration and login features using JSON Web
-                                Tokens for authorisation. Key features include user signup with email and password
-                                validation, password hashing with bcrypt, user login, JWT-based authentication and demo
-                                protected route, comprehensive testing with Jest.<br>
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/joseph-padfield/authentication-api"
-                                   target="_blank"><span
-                                        class="project-link">GitHub repository</span></a><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <p class="project-title">Encryption tech challenge</p>
-                    <div class="project decrypt-encrypt">
-                        <div class="project-background-filter">
-                            <p class="project-description">A substitution cipher built using Javascript, HTML, and CSS.
-                                It encrypts text into a series
-                                of numbers and decrypts those numbers back into the original text.
-                                The same input will always produce a different set of numbers each time it is encrypted.<br>
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/joseph-padfield/decryptionTechTestExercise"
-                                   target="_blank"><span class="project-link">GitHub Repository</span></a><br>
-                                <a href="https://joseph-padfield.github.io/decryptionTechTestExercise/"
-                                   target="_blank">
-                                    <span class="project-link">Live app</span></a>
-                            </p>
+    <div class="project">
+        <h3>Film Collector App</h3>
+        <img src="img/reels-from-the-crypt.png" class="project-images">
+        <div class="project-info">
+            <h3> PHP (Slim) | Javascript | SQL | HTML | CSS<br></h3>
+            <p>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <p class="project-title">Planet age calculator</p>
-                    <div class="project planet-age-calculator">
-                        <div class="project-background-filter">
-                            <p class="project-description">
-                                This project was an exercise to learn Typescript. It is an age-calculator
-                                that determines a user's age on various planets within our solar system.
-                                It uses HTML, CSS and Typescript.<br>
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/joseph-padfield/how-old-are-you-on-mars"
-                                   target="_blank"><span
-                                        class="project-link">GitHub repository</span></a><br>
-                                <a href="https://joseph-padfield.github.io/how-old-are-you-on-mars/" target="_blank"><span class="project-link">Live app</span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <p class="project-title">Furniture store API</p>
-                    <div class="project furniture-store">
-                        <div class="project-background-filter">
-                            <p class="project-description">IO ACADEMY TEAM PROJECT:<br>
-                                This project is a furniture store API built with SQL and object-oriented PHP.
-                                It retrieves product categories, products within a category, and product details.
-                                The API handles different units of measurement for product dimensions and currencies
-                                for product prices.<br>
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/iO-Academy/24-jul-hippos-furniture-store-API/commits/main/?author=joseph-padfield"
-                                   target="_blank"><span class="project-link">My contributions - GitHub</span></a><br>
-                                <a href="https://2024-henryt.dev.io-academy.uk/build/"
-                                   target="_blank"><span class="project-link">Live app</span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <p class="project-title">Academy portal</p>
-                    <div class="project academy-portal">
-                        <div class="project-background-filter">
-                            <p class="project-description">
-                                IO ACADEMY TEAM PROJECT:<br>Legacy codebase:<br>
-                                iO Academy portal full-stack project built with PHP, Sass, Javascript, HTML, and
-                                CSS. It allows the academy to track potential candidates through the application
-                                process.
-                                It also allows the academy to track events such as Hiring Events and Taster
-                                Sessions.<br>
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/iO-Academy/AcademyPortal/commits/main/?author=joseph-padfield"
-                                   target="_blank"><span
-                                        class="project-link">My contributions - GitHub</span></a><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <p class="project-title">Job site front-end</p>
-                    <div class="project job-site-api">
-                        <div class="project-background-filter">
-                            <p class="project-description">IO ACADEMY TEAM PROJECT:<br>
-                                The front end of a job listing website that utilises
-                                a provided API to fetch and display job-related information. Built with React,
-                                employing components, state management and state lifting. The styling is done
-                                using Bootstrap, and the project was developed using Agile methodologies within
-                                a team-based Scrum approach.<br>
-                            </p>
-                            <p class="project-description">
-                                <a href="https://github.com/iO-Academy/AcademyPortal/commits/main/?author=joseph-padfield"
-                                   target="_blank"><span
-                                        class="project-link">My contributions - GitHub</span></a><br>
-                                <a href="https://2024-thomask.dev.io-academy.uk/dist/" target="_blank"><span class="project-link">Live app</span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                Search for and store films to display in a collection. Interacting with entry displays additional info.<br>
+                <a href="https://github.com/joseph-padfield/film-collector-app"
+                   target="_blank" class="project-link">GitHub Repository</a>
+                <a href="https://film-collection.2024-josephp.dev.io-academy.uk/films"
+                   target="_blank" class="project-link">Live app</a>
+            </p>
         </div>
+    </div>
+    <div class="project">
+        <h3>Authentication API</h3>
+        <img src="img/security-2168234_1280.jpg" class="project-images">
+        <div class="project-info">
+            <h3> Node | Express.js | MongoDB | JWT<br></h3>
+            <p>
+                A RESTful API for user authentication. User signup with email and password
+                validation, password hashing with bcrypt, user login, JWT-based authentication and demo
+                protected route. Comprehensive testing with Jest.<br>
+                <a href="https://github.com/joseph-padfield/authentication-api"
+                   target="_blank" class="project-link">GitHub Repository</a>
+            </p>
+        </div>
+    </div>
+    <div class="project">
+        <h3>Encryption App</h3>
+        <img src="img/encryption.jpg" class="project-images">
+        <div class="project-info">
+            <h3> Javascript | HTML | CSS<br></h3>
+            <p>
+                Substitution cypher.<br>
+                Handles encryption and decryption.
+                The encrypted output will be different every time, but will always decrypt to the same input.<br>
+                <a href="https://github.com/joseph-padfield/decryptionTechTestExercise"
+                   target="_blank" class="project-link">GitHub Repository</a>
+                <a href="https://joseph-padfield.github.io/decryptionTechTestExercise/"
+                   target="_blank" class="project-link">Live app</a>
+            </p>
+        </div>
+    </div>
+</div>
 </section>
-<footer>
+<section id="about-section">
+<h1>About</h1>
+<p id="about-text">
+    A highly motivated and results-orientated full-stack developer, transitioning to a career in the tech industry
+    after a successful 12-year international career as an opera singer. <br>
+    That career has left me highly organised, disciplined and resilient, with exceptional teamwork and interpersonal skills.<br>
+    I trained as a Full-Stack Developer at the prestigious iO Academy in Bath over a four-month intensive bootcamp, and
+    have since been honing my skills building Full-Stack apps and APIs. I have a particular interest in all things related
+     to cyber-security, which I hope will bring added value to my work as a developer.
 
-</footer>
 
+</p>
+</section>
+<section id="skills-section">
+<h1>Skills</h1>
+<div id="skills-parent-container">
+    <p id="skills-text">
+        <span>Frontend: </span>Javascript | Typescript | React | Sass | Tailwind | Bootstrap<br>
+        <span>Backend: </span>PHP | Node | Slim | Laravel | SQL | MongoDB
+    </p>
+</div>
+</section>
 </body>
 
 </html>
